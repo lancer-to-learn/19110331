@@ -12,7 +12,7 @@ function check(id){
 class MssvController {
 
     
-    //Get [/:id]
+    //Get [19110331/:id]
     getByID(req, res) {
         const ID = req.params.id;
         let i = check(ID);
@@ -25,6 +25,7 @@ class MssvController {
         
     }
 
+    //Post [19110331/:id]
     postItem(req,res) {
         console.log(`${req.body}`);
         const ID = req.body.id;
